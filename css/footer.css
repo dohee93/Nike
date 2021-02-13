@@ -1,0 +1,48 @@
+
+/* footer CSS */
+
+.footer_wrap { width: 100%; height: auto; background-color: #111;}
+
+.footer { width: 100%; height: auto; margin: 0 auto; padding: 40px 40px 0 40px; }
+
+.footer_up { margin: 0 -8px 16px -8px; display: flex; justify-content: space-between; align-items: flex-start;}
+
+.footer_up_left { width: 75%; height: auto; padding: 0 8px; display: flex; }
+.footer_up_left_ul { width: 25%; padding: 0 8px; }
+.footer_up_left li a { color: #7e7e7e; margin-bottom: 3px; font-size: 12px; font-family: 'Noto Sans KR'; font-weight: 400; line-height: 2; letter-spacing: -0.5px; }
+
+.footer_up_left ul:nth-child(1) a { font-size: 14px; color: #fff; font-family: 'Nike TG'; letter-spacing: 0.5px;}
+.footer_up_left ul:nth-child(2) li:nth-child(1) a { font-size: 14px; color: #fff; font-family: 'Nike TG'; letter-spacing: 0.5px;}
+.footer_up_left ul:nth-child(3) li:nth-child(1) a { font-size: 14px; color: #fff; font-family: 'Nike TG'; letter-spacing: 0.5px; }
+.footer_up_left_ul a:hover {color: #fff;}
+
+.footer_up_right { width: 25%; height: auto; padding: 0 8px 0 0; display: flex; justify-content: flex-end; align-items: center; }
+.footer_up_right li { margin-left: 16px; }
+.social_circle { width: 30px; height: 30px; border-radius: 15px; background-color: #7e7e7e; display: flex; justify-content: center; align-items: center;}
+.footer_up_right_img { width: 20px; height:20px; } 
+.footer_up_right a:hover { background-color: #fff;}
+
+
+.footer_down { margin: 0 -8px; border-top: 1px solid #222; display: flex; justify-content: space-between; color: #7e7e7e; align-items: center;}
+
+.footer_down_left { width: 50%; padding: 12px 8px 0 8px; }
+.footer_down_left_flex { display: flex; align-items: flex-end;}
+.footer_down_left img { width: 15px; height: 18px;}
+.location { color: #fff; margin: 0 8px;}
+.right { margin: 0 0 0 16px; }
+
+.footer_down_right { width: 50%; padding: 12px 8px 0 0; display: flex; align-items: flex-end; justify-content: flex-end;}
+.footer_down_right li { line-height: 2.4; margin: 0 0 0 12px; padding: 8px;}
+.footer_down_right a { color: #7e7e7e;}
+.footer_down_right a:hover { color: #fff;}
+.footer_down_right li:nth-child(1):hover { border-top: 1px solid rgb(255,255,255);}
+
+
+
+@media screen and (max-width:1024px) {
+   
+   .footer { width: 100%; padding: 40px 12px 0; }
+
+   .footer_down_right { flex-wrap: wrap;}
+
+}

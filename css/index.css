@@ -1,0 +1,410 @@
+/* MAIN CSS */
+
+/* Main Visual CSS */
+.main_visual_wrap { 
+   width: 100%; 
+   height: auto; 
+   padding: 0 48px; 
+}
+
+.main_visual { 
+   width: 100%; 
+   height: auto; 
+   padding: 0 8px; 
+   display: flex; 
+}
+
+.main_visual_1_a img{ 
+   width: 100%;
+   height: 900px;
+   object-fit: cover;
+   object-position: 50% 50%;
+}
+
+.main_visual_1_a { 
+   width:100%; 
+   display: block;
+   position: relative;
+}
+
+.main_visual_1_a div {
+   position: absolute;
+   left: 36px;
+   bottom: 36px;
+}
+
+.main_visual_2_a img { 
+   width: 100%;
+   height: 900px;
+   object-fit: cover;
+   object-position: 50% 50%;
+}
+
+.main_visual_2_a { 
+   width: 100%; 
+   display: block;
+   position: relative;
+}
+
+.main_visual_2_a div {
+   position: absolute;
+   bottom: 36px;
+   right: 36px;
+   text-align: right;
+}
+
+.main_visual_1 p:nth-child(1) {
+   line-height: 0.833333;
+}
+
+/* Main Visual Video */
+.hero_video_wrap { width: 95%; height: 100%; margin: 0 auto; overflow: hidden; position: relative;}
+.hero_video { width: 100%; margin: -90px 0 0 0;}
+.hero_video_wrap a { display: block; width: 100%; height: 99%; left:0; top:0; position: absolute; background-color: rgba(0,0,0,0.3);}
+.hero_video_title { width: 100%; position: absolute; top: 450px; left: 0; text-align: center; color: rgba(255,255,255,0.9); font-family: 'Nike Futura'; font-size: 120px; }
+
+/* The Latest And Greatest CSS */
+
+.lng_wrap { width: 100%; padding: 84px 0; }
+.lng_scroll_wrap { width: 100%; overflow-x: scroll; padding: 0 48px 20px 48px;}
+.lng { width: 200%; display: flex; }
+.lng li { width: calc(16.66667% - 16px); height: auto; margin: 0 8px;  }
+.lng li img { width: 100%; vertical-align: middle;}
+
+.lng_text { display: flex; justify-content: space-between; margin: 12px 16px 0 0 ;} 
+
+
+/* Just In CSS */
+
+.just_in_wrap { width: 100%; height: auto; padding: 0 48px 0 48px; }
+.just_in { width: 100%; height: auto; display: flex;}
+
+.just_in_1 { width: calc(50% - 16px); height: 700px; background-image: url(../img/nike-just-do-it_1.jpg); margin: 0 8px; }
+.just_in_2 { width: calc(50% - 16px); height: 700px; background-image: url(../img/nike-just-do-it_2.jpg); margin: 0 8px; }
+
+.just_in_1_a, .just_in_2_a { width: 100%; height: 100%; display: block;  display: flex; flex-direction: column; justify-content: flex-end; padding: 36px;}
+.just_in_1_a:hover, .just_in_2_a:hover { background-color: rgba(0,0,0,0.3);}
+
+/* Featured Footwear CSS */
+
+.footwear_wrap { 
+   width: 100%; 
+   padding: 84px 48px;
+}
+
+.footwear { 
+   width: 100%; 
+   margin: 0 8px; 
+}
+
+.footwear_a { 
+   width: 100%; 
+   display: block;
+   position: relative;
+}
+
+.footwear_a img {
+   width: 100%;
+   height: 700px;
+}
+
+.footwear_a div {
+   position: absolute;
+   bottom: 36px;
+   left: 36px;
+}
+
+.footwear_a div p:first-child {
+   line-height: 1;
+}
+
+/* Trending Now CSS */
+
+.trending_now_wrap { width: 100%; padding: 84px 48px 0 48px; }
+.trending_now {width: 100%; display: flex; }
+.trending_now_1 { width: calc(50% - 16px); height: 700px; background-image: url(../img/Trending_Now_1.jpg); margin: 0 8px; }
+.trending_now_2 { width: calc(50% - 16px); height: 700px; background-image: url(../img/Trending_Now_2.jpg); margin: 0 8px; }
+.trending_now_1_a, .trending_now_2_a { width: 100%; height: 100%; padding: 36px;  display: block; display: flex; flex-direction: column; justify-content: flex-end; }
+
+.trending_now_1_a:hover, .trending_now_2_a:hover { background-color: rgba(0,0,0,0.3);}
+
+/* Gear for Your Goals CSS */
+
+.gear_wrap { width: 100%; padding: 84px 56px;}
+.gear { width: 100%; display: flex; }
+.gear li { width: (100% - 144px) / 3; margin: 0 16px 0 0; }
+.gear li img { width: 100%; margin: 0 0 16px; }
+
+/* All Atheletes CSS */
+
+.belong_wrap { width: 100%; padding: 0 48px; }
+.belong { width: 100%; height: 500px; background-image: url(../img/nike-just-do-it.png);  margin: 0 8px; cursor: pointer; display: flex; justify-content: center; align-items: flex-end; padding: 0 0 30px;}
+
+.belong button { margin: 0 4px;}
+
+/* Main Menu */
+
+.main_menu_wrap { width: 100%; margin: 84px 0 56px 0;}
+.main_menu { width: 100%; padding: 0 20px; margin: 0 auto; display: flex; justify-content: space-between; height: 190px; overflow: hidden; transition: height 0.5s;}
+.main_menu:hover { height: 500px; }
+.main_menu ul { width: 192px;}
+.main_menu ul li { margin: 0 0 12px 0; }
+.main_menu ul li a { color: rgb(117,117,117); }
+.main_menu ul li a:hover { color: rgb(17,17,17); }
+.main_menu ul li:nth-child(1) { margin: 0 0 24px 0; color: rgb(17,17,17);}
+
+
+/* CSS for Tablet Portrait */
+
+@media screen and (max-width: 1024px) { 
+   .main_visual_wrap { padding: 0 12px; }
+   .main_visual_1 { height: 500px; }
+   .main_visual_1 p:nth-child(1) { font-size: 48px; line-height: 40px;}
+   .main_visual_2 { height: 500px; }
+
+   .just_in_wrap { width: 100%; padding: 84px 12px 0; }
+   .just_in_1 { height: 500px; }
+   .just_in_2 { height: 500px; }
+
+   .footwear_wrap { width: 100%; padding: 84px 12px 0;}
+   .footwear div { background-image: none;}
+   .footwear p:nth-child(1) { font-size: 48px; line-height: 40px; }
+   .footwear_a { height: 500px;}
+
+   .trending_now_wrap { width: 100%; padding: 84px 12px 0;}
+   .trending_now_1, .trending_now_2 { height: 500px; }
+
+   .gear_wrap { width: 100%; padding : 84px 12px 0;}
+}
+
+@media screen and (max-width: 639px) {
+
+   .main_visual {
+      width: 100%;
+      padding: 0 8px;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .main_visual_1 {
+      width: 100%; 
+      height: auto;
+      padding: 0;
+   }
+
+   .main_visual_1_a img {
+      display: block;
+      margin: 0 0 20px 0;
+      width: 100%;
+      height: 500px;
+   }
+
+   .main_visual_1_a div {
+      position: unset;
+      display: block;
+      margin: 0 0 20px 0;
+   }
+
+   .main_visual_1_a div p {
+      color: rgb(17,17,17);
+   }
+
+   .main_visual_1_a div button {
+      color: white;
+      background-color: rgb(17,17,17);
+   }
+
+   .main_visual_2 {
+      width: 100%; 
+      height: auto;
+      padding: 0;
+   }
+
+   .main_visual_2_a img {
+      display: block;
+      margin: 0 0 20px 0;
+      width: 100%;
+      height: 500px;
+   }
+
+   .main_visual_2_a div {
+      position: unset;
+      display: block;
+   }
+
+   .main_visual_2_a div p {
+      color: rgb(17,17,17);
+      text-align: left;
+   }
+
+   .lng_wrap h2 { 
+      padding-left: 20px;
+   }
+   
+   .lng_wrap { 
+      width: 100%; 
+      padding: 84px 0; 
+   }
+
+   .lng_scroll_wrap { 
+      width: 100%; 
+      overflow-x: scroll; 
+      padding: 0 12px 20px 12px;
+   }
+
+   .lng { 
+      width: 600%; 
+      display: flex; 
+   }
+
+   .lng li { 
+      width: calc(100% - 16px); 
+      height: auto; 
+      margin: 0 8px;  
+   }
+
+   .lng li img { 
+      width: 100%; 
+      vertical-align: middle;
+   }
+
+   .lng_text { 
+      display: flex; 
+      justify-content: space-between; 
+      margin: 12px 16px 0 0;
+   } 
+
+   /* Just In CSS */
+   
+   .just_in_wrap h2 { 
+      padding-left: 12px;
+   }
+
+   .just_in_wrap { 
+      width: 100%; 
+      padding: 0 12px; 
+   }
+
+   .just_in { 
+      flex-wrap: wrap;
+   }
+
+   .just_in_1 { 
+      width: 100%; 
+      height: 500px; 
+      margin: 0 8px 8px; 
+   }
+
+   .just_in_2 { 
+      width: 100%; 
+      height: 500px; 
+      margin: 0 8px 8px; 
+   }
+
+   /* Featured Footwear CSS */
+   /* .footwear_1 { background-image: none; height: 500px; padding: 0;}
+   .footwear_1 div { background-image: url(../img/footwear_1.jpg); width:100%; height: 700px; margin: 0 0 20px; }
+
+   .footwear_1 p:nth-child(2) { font-size: 48px; line-height: 40px; } */
+
+
+   .footwear_wrap { 
+      width: 100%; 
+      padding: 84px 12px;
+   }
+   
+   .footwear { 
+      width: 100%; 
+      margin: 0 8px; 
+   }
+   
+   .footwear_a { 
+      position: unset;
+   }
+   
+   .footwear_a img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: 50% 50%;
+      margin-bottom: 20px;
+      
+
+   }
+   
+   .footwear_a div {
+      position: unset;
+      bottom: 36px;
+      left: 36px;
+   }
+   
+   .footwear_a div p:first-child {
+      line-height: 1;
+   }
+
+   
+   /* Trending Now CSS */
+   
+   .trending_now_wrap h2 { 
+      padding-left: 12px;
+   }
+
+   .trending_now_wrap { 
+      width: 100%; 
+      padding: 0 12px; 
+   }
+
+   .trending_now { 
+      flex-wrap: wrap;
+   }
+
+   .trending_now_1 { 
+      width: 100%; 
+      height: 500px; 
+      margin: 0 8px 8px; 
+   }
+
+   .trending_now_1_a {
+      padding: 24px;
+   }
+
+   .trending_now_2 { 
+      width: 100%; 
+      height: 500px; 
+      margin: 0 8px 8px; 
+   }
+
+   .trending_now_2_a {
+      padding: 24px;
+   }
+
+
+   .main_menu_wrap { 
+      width: 100%; 
+      margin: 84px 12px;
+   }
+
+   .main_menu { 
+      width: 100%; 
+      padding: 0 8px; 
+      flex-wrap: wrap;
+   }
+
+   .main_menu ul { 
+      width: 100%; 
+      height: 40px; 
+      overflow: hidden;
+   }
+   
+   .main_menu ul li a {
+      font-size: 14px; 
+      line-height: 24px; 
+   }
+   
+   .main_menu ul li:nth-child(1) { 
+      font-size: 14px; 
+      line-height: 24px; 
+   }
+
+
+}
