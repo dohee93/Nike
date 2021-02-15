@@ -325,8 +325,13 @@
    }
 
    /* The Latest and Greatest CSS */
+
+   .lng_wrap {
+      padding: 0 12px;
+   }
+
    .lng_scroll_wrap {
-      padding: 0 12px 20px 12px;
+      padding: 0 0 20px 0;
    }
 
    .lng {
@@ -420,16 +425,23 @@
 
 @media screen and (max-width: 640px) {
    /* Main Visual CSS */
+   .main_visual_wrap {
+      padding : 0;
+   }
+
    .main_visual {
       width: 100%;
-      padding: 0 8px;
       display: unset;
+      
    }
 
    .main_visual_1 {
       width: 100%;
-      height: 700px;
-      padding: 0;
+      height: 500px;
+      /* background-position: -130px center; */
+      object-fit: cover;
+      object-position: right;
+      
    }
 
    .main_visual_1_text {
@@ -442,6 +454,7 @@
 
    .main_visual_text_m {
       display: block;
+      padding: 0 8px;
    }
 
    .main_visual_text_m p:first-child {
@@ -498,6 +511,7 @@
    
    .footwear_text_m {
       display: block;
+      margin-top: 10px;
    }
    
    /* Trending Now CSS */
