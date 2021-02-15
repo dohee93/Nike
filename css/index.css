@@ -1,61 +1,49 @@
 /* MAIN CSS */
 
 /* Main Visual CSS */
+
 .main_visual_wrap { 
-   width: 100%; 
-   height: auto; 
-   padding: 0 48px; 
-}
-
-.main_visual { 
-   width: 100%; 
-   height: auto; 
-   padding: 0 8px; 
-   display: flex; 
-}
-
-.main_visual_1_a img{ 
    width: 100%;
-   height: 900px;
-   object-fit: cover;
-   object-position: 50% 50%;
+   padding: 0 48px;
 }
 
-.main_visual_1_a { 
-   width:100%; 
-   display: block;
-   position: relative;
-}
-
-.main_visual_1_a div {
-   position: absolute;
-   left: 36px;
-   bottom: 36px;
-}
-
-.main_visual_2_a img { 
+.main_visual {
    width: 100%;
+   padding: 0 8px;
+   display: flex;
+}
+
+.main_visual_1 {
+   width: 50%;
    height: 900px;
-   object-fit: cover;
-   object-position: 50% 50%;
+   background-image: url(../img/nike-just-do-it_1.png);
+   padding: 36px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
 }
 
-.main_visual_2_a { 
-   width: 100%; 
-   display: block;
-   position: relative;
+.main_visual_2 {
+   width: 50%;
+   height: 900px;
+   background-image: url(../img/nike-just-do-it_2.png);
+   padding: 36px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
 }
 
-.main_visual_2_a div {
-   position: absolute;
-   bottom: 36px;
-   right: 36px;
-   text-align: right;
+.main_visual_1:hover,
+.main_visual_2:hover {
+   cursor: pointer
 }
 
-.main_visual_1 p:nth-child(1) {
-   line-height: 0.833333;
+.main_visual_1 img,
+.main_visual_2 img {
+   display: none;
 }
+
 
 /* Main Visual Video */
 .hero_video_wrap { width: 95%; height: 100%; margin: 0 auto; overflow: hidden; position: relative;}
@@ -154,257 +142,174 @@
 .main_menu ul li:nth-child(1) { margin: 0 0 24px 0; color: rgb(17,17,17);}
 
 
+
 /* CSS for Tablet Portrait */
 
-@media screen and (max-width: 1024px) { 
-   .main_visual_wrap { padding: 0 12px; }
-   .main_visual_1 { height: 500px; }
-   .main_visual_1 p:nth-child(1) { font-size: 48px; line-height: 40px;}
-   .main_visual_2 { height: 500px; }
+@media screen and (max-width:1023px) 
 
-   .just_in_wrap { width: 100%; padding: 84px 12px 0; }
-   .just_in_1 { height: 500px; }
-   .just_in_2 { height: 500px; }
+{
+   /* Main Visual CSS */
 
-   .footwear_wrap { width: 100%; padding: 84px 12px 0;}
-   .footwear div { background-image: none;}
-   .footwear p:nth-child(1) { font-size: 48px; line-height: 40px; }
-   .footwear_a { height: 500px;}
+.main_visual_wrap { padding: 0 12px;}
 
-   .trending_now_wrap { width: 100%; padding: 84px 12px 0;}
-   .trending_now_1, .trending_now_2 { height: 500px; }
-
-   .gear_wrap { width: 100%; padding : 84px 12px 0;}
+.main_visual_1 {  height: 500px; 
 }
+.main_visual_1 div {display: none;}
+.main_visual_1 p:nth-child(2) { font-size: 48px; line-height: 40px;}
 
-@media screen and (max-width: 639px) {
+.main_visual_2 {  height: 500px; }
 
-   .main_visual {
-      width: 100%;
-      padding: 0 8px;
-      display: flex;
-      flex-wrap: wrap;
+
+/* The Latest & Greatest - Best */
+
+.best_wrap { width: 100%; padding:84px 0 0 ;}
+.best_scroll_wrap { width: 100%; overflow: scroll; padding: 0 0 20px 12px;}
+.best_wrap h2 { padding:0 0 0 20px;}
+
+.best { width: 270%; display: flex; }
+.best li { width: 100%; height: auto; margin: 0 8px; }
+
+
+/* Just In CSS */
+
+.just_in_wrap { width: 100%; padding: 84px 12px 0; }
+
+.just_in_1 { height: 500px; }
+
+.just_in_2 { height: 500px; }
+
+/* Featured Footwear CSS */
+
+.footwear_wrap { width: 100%; padding: 84px 12px 0;}
+.footwear_1 { height: 500px;}
+.footwear_1 p:nth-child(2) { font-size: 48px; line-height: 40px; }
+
+
+/* Trending Now */
+
+.trending_now_wrap { width: 100%; padding: 84px 12px 0; }
+
+.trending_now_1 {height: 500px;}
+.trending_now_2 {height: 500px;}
+
+
+/* Gear for Your Golas CSS */
+
+.gear_wrap { width: 100%; padding: 84px 48px 0; }
+.gear { width: 100%; display: flex;}
+.gear li { width: calc(33.33333% - 16px); margin: 0 8px;}
+.gear li img { width: 100%; margin:0 0 16px;}
+
+/* Nike Slogan */
+
+.slogan_wrap {width: 100%; padding: 64px 48px 0; }
+
+/* Menu Link */
+
+.menulink_wrap { width: 100%; padding: 84px 12px;}
+
+.menulink { width: 100%; padding: 0 8px; }
+
+.menulink ul { width: 25%;}
+
+.menulink ul li a {font-size: 14px; line-height: 24px; }
+
+.menulink ul li:first-child {font-size: 14px; line-height: 24px;}
+
+/* CSS for Mobile Portrait */
+
+
+@media screen and (max-width:639px) {
+
+   .main_visual { width: 100%; padding: 0 8px; display: flex; flex-wrap: wrap;}
+
+   .main_visual_1 { width:100%; height:700px; background-image: none; padding:0px;
    }
 
-   .main_visual_1 {
-      width: 100%; 
-      height: auto;
-      padding: 0;
-   }
+   .main_visual_1 div {display: block; margin: 0 0 20px 0; width: 100%; height: 500px; background-image: url(../img/nike-just-do-it_1.png); background-size: cover; background-position: -130px center;
+   background-repeat: no-repeat;} 
 
-   .main_visual_1_a img {
-      display: block;
-      margin: 0 0 20px 0;
-      width: 100%;
-      height: 500px;
-   }
+   .main_visual_1:hover { cursor: pointer;}
+   .main_visual_1 p { color:rgb(17,17,17);}
+   .main_visual_1 a { color:white; background-color: rgb(17,17,17);}
 
-   .main_visual_1_a div {
-      position: unset;
-      display: block;
-      margin: 0 0 20px 0;
-   }
-
-   .main_visual_1_a div p {
-      color: rgb(17,17,17);
-   }
-
-   .main_visual_1_a div button {
-      color: white;
-      background-color: rgb(17,17,17);
-   }
-
-   .main_visual_2 {
-      width: 100%; 
-      height: auto;
-      padding: 0;
-   }
-
-   .main_visual_2_a img {
-      display: block;
-      margin: 0 0 20px 0;
-      width: 100%;
-      height: 500px;
-   }
-
-   .main_visual_2_a div {
-      position: unset;
-      display: block;
-   }
-
-   .main_visual_2_a div p {
-      color: rgb(17,17,17);
-      text-align: left;
-   }
-
-   .lng_wrap h2 { 
-      padding-left: 20px;
+   .main_visual_2 { display: none;
    }
    
-   .lng_wrap { 
-      width: 100%; 
-      padding: 84px 0; 
-   }
+   /* The Latest And Greatest CSS */
 
-   .lng_scroll_wrap { 
-      width: 100%; 
-      overflow-x: scroll; 
-      padding: 0 12px 20px 12px;
-   }
+   .best_scroll_wrap { padding: 0 0 20px 12px;}
 
-   .lng { 
-      width: 600%; 
-      display: flex; 
-   }
+   .best { width: 1892px; }
 
-   .lng li { 
-      width: calc(100% - 16px); 
-      height: auto; 
-      margin: 0 8px;  
-   }
-
-   .lng li img { 
-      width: 100%; 
-      vertical-align: middle;
-   }
-
-   .lng_text { 
-      display: flex; 
-      justify-content: space-between; 
-      margin: 12px 16px 0 0;
-   } 
+   .best li { width: 300px; }
 
    /* Just In CSS */
-   
-   .just_in_wrap h2 { 
-      padding-left: 12px;
-   }
 
-   .just_in_wrap { 
-      width: 100%; 
-      padding: 0 12px; 
-   }
 
-   .just_in { 
-      flex-wrap: wrap;
-   }
+   .just_in_wrap { width: 100%; padding: 84px 12px 0; }
 
-   .just_in_1 { 
-      width: 100%; 
-      height: 500px; 
-      margin: 0 8px 8px; 
-   }
+   .just_in { flex-wrap: wrap;}
 
-   .just_in_2 { 
-      width: 100%; 
-      height: 500px; 
-      margin: 0 8px 8px; 
-   }
+   .just_in_1 { width:100%; height: 500px; margin: 0 8px 8px;  }
+
+   .just_in_2 { width:100%; height: 500px;  }
+
+   .just_in_1_a {  padding: 24px; }
+
+   .just_in_2_a {  padding: 24px; }
+
 
    /* Featured Footwear CSS */
-   /* .footwear_1 { background-image: none; height: 500px; padding: 0;}
-   .footwear_1 div { background-image: url(../img/footwear_1.jpg); width:100%; height: 700px; margin: 0 0 20px; }
 
-   .footwear_1 p:nth-child(2) { font-size: 48px; line-height: 40px; } */
+   .footwear { background-image: none; height: 500px; padding: 0;}
+   
+   .footwear div { background-image: url(../img/footwear_1.jpg); width:100%; height: 700px; margin: 0 0 20px; }
+
+   .footwear p:nth-child(2) { font-size: 48px; line-height: 40px; }
 
 
-   .footwear_wrap { 
-      width: 100%; 
-      padding: 84px 12px;
-   }
-   
-   .footwear { 
-      width: 100%; 
-      margin: 0 8px; 
-   }
-   
-   .footwear_a { 
-      position: unset;
-   }
-   
-   .footwear_a img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      object-position: 50% 50%;
-      margin-bottom: 20px;
-      
-
-   }
-   
-   .footwear_a div {
-      position: unset;
-      bottom: 36px;
-      left: 36px;
-   }
-   
-   .footwear_a div p:first-child {
-      line-height: 1;
-   }
-
-   
    /* Trending Now CSS */
+
+   .trending_now_wrap { width: 100%; padding: 84px 12px 0; }
+
+   .trending_now { flex-wrap: wrap;}
+
+   .trending_now_1 { width:100%; height: 500px; margin: 0 8px 8px;  }
+
+   .trending_now_2 { width:100%; height: 500px;  }
+
+   .trending_now_1_a {  padding: 24px; }
+
+   .trending_now_2_a {  padding: 24px; }
+
+
+   /* Gear for Your Golas CSS */
+
+   .gear_wrap { width: 100%; padding: 84px 12px 0; }
+   .gear_scroll_wrap { width:100%; overflow: scroll; padding: 0 0 20px 0;}
+   .gear { width:948px; }
+   .gear_1 { width:300px;}
+   .gear_2 { width:300px;}
+   .gear_3 { width:300px;}
+
+   /* Where All Atheletes belong */
+
+   .belong_wrap {width: 100%; padding: 64px 0px 0; }
+
+   .belong { background-image: url(../img/slogan_m.jpg); margin: 0;  }
+
    
-   .trending_now_wrap h2 { 
-      padding-left: 12px;
-   }
+   /* Main Menu */
 
-   .trending_now_wrap { 
-      width: 100%; 
-      padding: 0 12px; 
-   }
+   .main_menu_wrap { width: 100%; padding: 84px 12px;}
 
-   .trending_now { 
-      flex-wrap: wrap;
-   }
+   .main_menu { width: 100%; padding: 0 8px; flex-wrap: wrap; }
 
-   .trending_now_1 { 
-      width: 100%; 
-      height: 500px; 
-      margin: 0 8px 8px; 
-   }
+   .main_menu ul { width: 100%; height: 40px; overflow: hidden;}
 
-   .trending_now_1_a {
-      padding: 24px;
-   }
+   .main_menu ul li a {font-size: 14px; line-height: 24px; }
 
-   .trending_now_2 { 
-      width: 100%; 
-      height: 500px; 
-      margin: 0 8px 8px; 
-   }
-
-   .trending_now_2_a {
-      padding: 24px;
-   }
-
-
-   .main_menu_wrap { 
-      width: 100%; 
-      margin: 84px 12px;
-   }
-
-   .main_menu { 
-      width: 100%; 
-      padding: 0 8px; 
-      flex-wrap: wrap;
-   }
-
-   .main_menu ul { 
-      width: 100%; 
-      height: 40px; 
-      overflow: hidden;
-   }
-   
-   .main_menu ul li a {
-      font-size: 14px; 
-      line-height: 24px; 
-   }
-   
-   .main_menu ul li:nth-child(1) { 
-      font-size: 14px; 
-      line-height: 24px; 
-   }
-
+   .main_menu ul li:first-child {font-size: 14px; line-height: 24px;}
 
 }

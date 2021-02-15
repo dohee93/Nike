@@ -85,10 +85,10 @@ p { font-family: 'Noto Sans KR'; font-size: 16px; line-height: 1.5;  letter-spac
 .c_126 { color: rgb(126, 126, 126)}
 .c_255 { color: rgb(255, 255, 255);}
 
-.button_white { display: block; width: auto; height: 40px; background-color: rgb(255, 255, 255); color:rgb(17,17,17); border-radius: 20px; text-align: center; line-height: 40px; border: none; padding: 0 28px; margin: 18px 6px 0 0; font-weight: 500; font-size: 16px;}  
-
-.button_black { display: block; width: auto; height: 40px; background-color: rgb(17,17,17); color:rgb(255, 255, 255); border-radius: 20px; text-align: center; line-height: 40px; border: none; padding: 0 28px; margin: 18px 6px 0 0; font-weight: 500; font-size: 16px;}  
-
-
-.button_white:hover { background-color: rgba(255,255,255,0.7);} 
-.button_black:hover { background-color: rgba(17,17,17,0.7);} 
+.button_white {display: block; width: 95px; height: 40px; background-color: white; color:rgb(17,17,17); border-radius: 20px; text-align: center; line-height: 40px; border: none;}  
+.button_white:hover { background-color: rgba(255,255,255,0.6);}
+  
+  
+.button_black { display: block; width: 95px;height: 40px; background-color: rgb(17,17,17); color:white; border-radius: 20px; text-align: center; line-height: 40px; border: none;}  
+.button_black:hover { background-color: rgba(0,0,0,0.6);}
+  
