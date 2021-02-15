@@ -1,94 +1,223 @@
+/* Font Style */
+
 @font-face { 
    font-family: 'Nike TG'; 
    src: url(../font/257c802f-349c-4b4d-aefa-546d5de15ec6.woff2) format('woff2');
-   }
+}
 
 @font-face { 
-      font-family: 'Nike Futura'; 
-      src: url(../font/nike-futura.woff2) format('woff2');
-      }
+   font-family: 'Nike Futura'; 
+   src: url(../font/nike-futura.woff2) format('woff2');
+}
 
 @font-face { 
-      font-family: 'Noto Sans KR'; 
-      src: url(../font/NotoSans-Thin.woff2) format('woff2');
-      font-weight: 100;
-      }
+   font-family: 'Noto Sans KR'; 
+   src: url(../font/NotoSans-Thin.woff2) format('woff2');
+   font-weight: 100;
+}
 
 @font-face { 
-      font-family: 'Noto Sans KR'; 
-      src: url(../font/NotoSans-Light.woff2) format('woff2');
-      font-weight: 200;
-      }
+   font-family: 'Noto Sans KR'; 
+   src: url(../font/NotoSans-Light.woff2) format('woff2');
+   font-weight: 200;
+}
 
 @font-face { 
-      font-family: 'Noto Sans KR'; 
-      src: url(../font/NotoSans-DemiLight.woff2) format('woff2');
-      font-weight: 300;
-      }
+   font-family: 'Noto Sans KR'; 
+   src: url(../font/NotoSans-DemiLight.woff2) format('woff2');
+   font-weight: 300;
+}
 
 @font-face { 
-         font-family: 'Noto Sans KR'; 
-         src: url(../font/NotoSans-Regular.woff2) format('woff2');
-         font-weight: 400;
-         }
+   font-family: 'Noto Sans KR'; 
+   src: url(../font/NotoSans-Regular.woff2) format('woff2');
+   font-weight: 400;
+}
 @font-face { 
    font-family: 'Noto Sans KR'; 
    src: url(../font/NotoSans-Medium.woff2) format('woff2');
    font-weight: 500;
-   }
+}
 
 @font-face { 
-      font-family: 'Noto Sans KR'; 
-      src: url(../font/NotoSans-Bold.woff2) format('woff2');
-      font-weight: 700;
-      }
+   font-family: 'Noto Sans KR'; 
+   src: url(../font/NotoSans-Bold.woff2) format('woff2');
+   font-weight: 700;
+}
 
-
-body { font-family: 'Noto Sans KR'; font-size: 16px; line-height: 1.5; font-weight: 400; letter-spacing: normal; color: #111;}
+body { 
+   font-family: 'Noto Sans KR'; 
+   font-size: 16px; 
+   line-height: 1.5; 
+   font-weight: 400; 
+   letter-spacing: normal; 
+   color: #111;
+}
 
 /* Layout Style */
-div, ul, li { background-position: center center; background-repeat: no-repeat; background-size: cover;}
 
-button:hover { cursor: pointer; }
+div, ul, li { 
+   background-position: center center; 
+   background-repeat: no-repeat; 
+   background-size: cover;
+}
+
+button:hover { 
+   cursor: pointer; 
+}
 
 /* Text Style */
 
-h2 { font-family: 'Noto Sans KR'; font-size: 24px; line-height: 28px; font-weight: 500; letter-spacing: normal; }
-h4 { font-family: 'Noto Sans KR'; font-size: 20px; line-height: 1.2; font-weight: 500; letter-spacing: normal; }
+h2 { 
+   font-family: 'Noto Sans KR'; 
+   font-size: 24px; 
+   line-height: 28px; 
+   font-weight: 500; 
+   letter-spacing: normal; 
+}
 
+h4 { 
+   font-family: 'Noto Sans KR'; 
+   font-size: 20px; 
+   line-height: 1.2; 
+   font-weight: 500; 
+   letter-spacing: normal; 
+}
 
-p { font-family: 'Noto Sans KR'; font-size: 16px; line-height: 1.5;  letter-spacing: normal; }
+p { 
+   font-family: 'Noto Sans KR';
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: normal;
+}
 
-.p_72 { font-family: 'Nike Futura'; font-size: 72px; color: white; }
-.p_20 { font-size: 20px; line-height: 1.2;}
-.p_14 { font-size: 14px; }
-.p_14 { font-size: 14px; }
-.p_14_tg { font-size: 14px; font-family: 'Nike TG'; font-weight: 400; line-height: 2; letter-spacing: 0.5px; }
-.p_12 { font-size: 12px; }
-.p_12_tg { font-family: 'Nike TG'; font-size: 12px; }
-.p_10 { font-size: 10px; }
+.p_72 { 
+   font-family: 'Nike Futura';
+   font-size: 72px; 
+   color: white;
+   line-height: 0.833333;
+}
 
-.fw_500 { font-weight: 500;}
+.p_48 { 
+   font-family: 'Nike Futura';
+   font-size: 48px; 
+   color: rgb(17, 17, 17);
+   line-height: 0.833333;
+}
 
-.lh_12 { line-height: 1.2;}
+.p_20 { 
+   font-size: 20px; 
+   line-height: 1.2;
+}
 
-.mb_8 { margin-bottom: 8px;}
-.mb_24 { margin-bottom: 24px;}
+.p_14 { 
+   font-size: 14px; 
+}
 
-.pl_8 { padding-left: 8px;}
-.pl_56 { padding-left: 56px;}
+.p_14_tg { 
+   font-size: 14px; 
+   font-family: 'Nike TG'; 
+   font-weight: 400; 
+   line-height: 2; 
+   letter-spacing: 0.5px; 
+}
+
+.p_12 { 
+   font-size: 12px; 
+}
+
+.p_12_tg { 
+   font-family: 'Nike TG'; 
+   font-size: 12px; 
+}
+
+.p_10 { 
+   font-size: 10px; 
+}
+
+.fw_500 { 
+   font-weight: 500;
+}
+
+.lh_12 { 
+   line-height: 1.2;
+}
+
+.mb_8 { 
+   margin-bottom: 8px;
+}
+
+.mb_24 { 
+   margin-bottom: 24px;
+}
+
+.pl_8 { 
+   padding-left: 8px;
+}
+
+.pl_56 { 
+   padding-left: 56px;
+}
 
 /* Color Style */
 
-.c_17 { color: rgb(17, 17, 17);}
-.c_117 { color: rgb(117, 117, 117)}
-.c_126 { color: rgb(126, 126, 126)}
-.c_255 { color: rgb(255, 255, 255);}
+.c_17 { 
+   color: rgb(17, 17, 17);
+}
 
-.button_white {display: block; width: 95px; height: 40px; background-color: white; color:rgb(17,17,17); border-radius: 20px; text-align: center; line-height: 40px; border: none;}  
-.button_white:hover { background-color: rgba(255,255,255,0.6);}
-  
-  
-.button_black { display: block; width: 95px;height: 40px; background-color: rgb(17,17,17); color:white; border-radius: 20px; text-align: center; line-height: 40px; border: none;}  
-.button_black:hover { background-color: rgba(0,0,0,0.6);}
-  
+.c_117 { 
+   color: rgb(117, 117, 117)
+}
+
+.c_126 { 
+   color: rgb(126, 126, 126)
+}
+
+.c_255 { 
+   color: rgb(255, 255, 255);
+}
+
+/* Button Style */
+
+.button_white { 
+   display: inline-block; 
+   width: auto; 
+   height: 40px; 
+   background-color: rgb(255, 255, 255);
+   color:rgb(17,17,17); 
+   border-radius: 20px; 
+   text-align: center; 
+   line-height: 40px; 
+   border: none; 
+   padding: 0 28px; 
+   margin: 18px 6px 0 0; 
+   font-weight: 500; 
+   font-size: 16px;
+}
+
+.button_black { 
+   display: inline-block; 
+   width: auto; 
+   height: 40px; 
+   background-color: rgb(17,17,17); 
+   color:rgb(255, 255, 255); 
+   border-radius: 20px; 
+   text-align: center; 
+   line-height: 40px; 
+   border: none; 
+   padding: 0 28px; 
+   margin: 18px 6px 0 0; 
+   font-weight: 500; 
+   font-size: 16px;
+}  
+
+.button_white:hover { 
+   background-color: rgba(255,255,255,0.7);
+} 
+
+.button_black:hover { 
+   background-color: rgba(17,17,17,0.7);
+} 
+
+
+      
